@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://kit.fontawesome.com/c34ef532b6.js" crossorigin="anonymous"></script>
+  <title>Landing Page</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap');
+
+    * {
+      font-family: 'Poppins', sans-serif;
+    }
+
+    @media screen and (min-width: 0px) {
+      .section-1 {
+        background-image: url(img/2.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+    }
+
+    /* @media screen and (min-width: 640px) {
+      .section-1 {
+        background-image: url(img/2.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: 0px -115px;
+      }
+    } */
+
+    @media screen and (min-width: 768px) {
+      .section-1 {
+        background-image: url(img/2.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: 0px -90px;
+      }
+    }
+
+    @media screen and (min-width: 1024px) {
+      .section-1 {
+        background-image: url(img/2.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+    }
+
+    .wrapper-img {
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+
+    .wrapper-img1 {
+      background-image: url(./img/card1.svg);
+    }
+
+    .wrapper-img2 {
+      background-image: url(./img/card2.svg);
+    }
+
+    .wrapper-img3 {
+      background-image: url(./img/card3.svg);
+    }
+
+    .wrapper-img4 {
+      background-image: url(./img/card4.svg);
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Navbar -->
+  <!-- <nav class="flex justify-between p-5">
+    <ul>
+      <li>Brand</li>
+    </ul>
+    <ul class="flex flex-row gap-5">
+      <li>Home</li>
+      <li>About</li>
+      <li>Features</li>
+    </ul>
+  </nav> -->
+  <!-- End Navbar -->
+
+  <!-- Section 1 -->
+  <div class="section-1 h-screen flex flex-col align-center justify-between">
+    <div class="h-3/4 flex justify-center items-center flex-col text-center px-10 gap-10 lg:w-1/2">
+      <h1 class="text-5xl text-[#12ADC1] font-bold md:text-6xl xl:text-7xl">DRUGZOID</h1>
+      <h3 class="text-3xl text-[#0295A9] -mt-7 md:text-4xl xl:text-5xl">YOUR HEALTH PARTNER</h3>
+      <p class="text-xs -mt-5 md:w-3/4 md:text-sm lg:text-base">Kami menyediakan layanan berbasis website untuk membantu
+        proses rehabilitasi para korban penyalahgunaan narkotika atau obat-obatan terlarang serta meneydiakan sarana
+        edukasi akan bahaya serta akibat dari penggunaan narkotika dan zat-zat berbahaya lainnya.</p>
+      <div class="w-full flex justify-center">
+        <div class="w-1/2 bg-blue-500 text-white rounded-2xl p-1 hover:bg-blue-800 md:w-[30%]">
+          <a href="">Get Started</a>
+        </div>
+      </div>
+    </div>
+    <div class="h-1/4">
+      <img src="img/line2.png" alt="" class="w-full h-full">
+    </div>
+  </div>
+  <!-- End Section 1 -->
+
+  <!-- Section 2 -->
+  <div class="section-2 min-h-screen align-center justify-between bg-blue-100 px-10 py-5 lg:py-16">
+    <h1 class="text-center text-blue-600 font-bold text-3xl mb-5 md:text-4xl lg:text-5xl lg:mb-20">Layanan Utama</h1>
+    <div class="grid grid-cols-1 gap-10 md:grid-cols-2 lg:grid-cols-4">
+      <div
+        class="flex flex-col justify-between text-center bg-white rounded-3xl drop-shadow-2xl p-2 cursor-pointer hover:bg-gray-100 lg:h-72 xl:h-[36rem]">
+        <img src="img/umum1.svg" alt="" class="h-3/4">
+        <h3 class="h-1/4 text-xl text-blue-600 mt-2 xl:text-3xl">
+          Forum Diskusi</h3>
+      </div>
+      <div
+        class="flex flex-col justify-between text-center bg-white rounded-3xl drop-shadow-2xl p-2 cursor-pointer hover:bg-gray-100 lg:h-72 xl:h-[36rem]">
+        <img src="img/umum2.svg" alt="" class="h-3/4">
+        <h3 class="h-1/4 text-xl text-blue-600 mt-2 xl:text-3xl">
+          Forum Diskusi</h3>
+      </div>
+      <div
+        class="flex flex-col justify-between text-center bg-white rounded-3xl drop-shadow-2xl p-2 cursor-pointer hover:bg-gray-100 lg:h-72 xl:h-[36rem]">
+        <img src="img/umum3.svg" alt="" class="h-3/4">
+        <h3 class="h-1/4 text-xl text-blue-600 mt-2 xl:text-3xl">
+          Forum Diskusi</h3>
+      </div>
+      <div
+        class="flex flex-col justify-between text-center bg-white rounded-3xl drop-shadow-2xl p-2 cursor-pointer hover:bg-gray-100 lg:h-72 xl:h-[36rem]">
+        <img src="img/umum1.svg" alt="" class="h-3/4">
+        <h3 class="h-1/4 text-xl text-blue-600 mt-2 xl:text-3xl">
+          Forum Diskusi</h3>
+      </div>
+    </div>
+  </div>
+  <!-- End Section 2 -->
+
+  <!-- Section 3 -->
+  <div class="min-h-screen py-16 px-10">
+    <h1 class="text-center text-blue-600 text-3xl font-bold mb-5 md:text-4xl lg:mb-20 lg:text-5xl">
+      Layanan Khusus</h1>
+    <div class="grid grid-cols-1 gap-5 lg:grid-cols-2 lg:gap-10">
+      <!-- Konten Khusus 1 -->
+      <div class="text-xl text-center text-blue-600 md:text-2xl lg:hidden">Konsultasi Dengan Ahli</div>
+      <div class="bg-yellow-200 flex flex-col p-5 justify-center items-center -mt-4 lg:flex-row">
+        <!-- Start show if large -->
+        <div class="hidden lg:w-1/2 lg:justify-center lg:flex-col lg:items-center lg:gap-5 lg:flex">
+          <h3 class="text-center text-xs xl:text-base xl:w-3/4">Lorem ipsum dolor sit amet, consectetur adipisicing
+            elit. Incidunt, molestiae.</h3>
+          <div class="w-3/4 bg-purple-500 text-white rounded-2xl p-1 text-center hover:bg-purple-700">
+            <a href="">Get Started</a>
+          </div>
+        </div>
+        <!-- End show if large -->
+        <div class="w-1/2">
+          <img src="img/khusus1.svg" alt="">
+        </div>
+        <!-- Start show in small -->
+        <div class="w-full flex justify-center flex-col items-center gap-5 lg:hidden">
+          <h3 class="text-xs text-center md:w-3/4 md:text-sm">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Aliquam, labore!</h3>
+          <div class="w-1/2 bg-purple-500 text-white rounded-2xl p-1 text-center lg:w-1/2 "><a href="">Get Started</a>
+          </div>
+        </div>
+        <!-- End show in small -->
+      </div>
+      <div class="hidden lg:flex lg:items-center lg:justify-center lg:text-3xl lg:text-blue-600 xl:text-4xl">Bantuan
+        Rehabilitasi
+      </div>
+      <!-- End Konten Khusus 1 -->
+
+      <!-- Konten Khusus 2 -->
+      <div class="hidden lg:flex lg:items-center lg:justify-center lg:text-3xl lg:text-blue-600 xl:text-4xl">
+        Pengembangan Minat & Bakat
+      </div>
+      <div class="text-xl text-center text-blue-600 md:text-2xl lg:hidden">Pengembangan Minat & Bakat</div>
+      <div class="bg-blue-200 flex flex-col p-5 justify-center items-center -mt-4 lg:flex-row">
+        <!-- Start show if large -->
+        <div class="hidden lg:w-1/2 lg:justify-center lg:flex-col lg:items-center lg:gap-5 lg:flex">
+          <h3 class="text-center text-xs xl:text-base xl:w-3/4">Lorem ipsum dolor sit amet, consectetur adipisicing
+            elit. Incidunt, molestiae.</h3>
+          <div class="w-3/4 bg-purple-500 text-white rounded-2xl p-1 text-center hover:bg-purple-700">
+            <a href="">Get Started</a>
+          </div>
+        </div>
+        <!-- End show if large -->
+        <div class="w-1/2">
+          <img src="img/khusus2.svg" alt="">
+        </div>
+        <!-- Start show in small -->
+        <div class="w-full flex justify-center flex-col items-center gap-5 lg:hidden">
+          <h3 class="text-xs text-center md:w-3/4 md:text-sm">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Aliquam, labore!</h3>
+          <div class="w-1/2 bg-purple-500 text-white rounded-2xl p-1 text-center hover:bg-purple-700"><a href="">Get
+              Started</a>
+          </div>
+        </div>
+        <!-- End show in small -->
+      </div>
+      <!-- End Konten Khusus 2 -->
+
+      <!-- Konten Khusus 3 -->
+      <div class="text-xl text-center text-blue-600 md:text-2xl lg:hidden">Konsultasi Dengan Ahli</div>
+      <div class="bg-yellow-200 flex flex-col p-5 justify-center items-center -mt-4 lg:flex-row">
+        <!-- Start show if large -->
+        <div class="hidden lg:w-1/2 lg:justify-center lg:flex-col lg:items-center lg:gap-5 lg:flex">
+          <h3 class="text-center text-xs xl:text-base xl:w-3/4">Lorem ipsum dolor sit amet, consectetur adipisicing
+            elit. Incidunt, molestiae.</h3>
+          <div class="w-3/4 bg-purple-500 text-white rounded-2xl p-1 text-center hover:bg-purple-700">
+            <a href="">Get Started</a>
+          </div>
+        </div>
+        <!-- End show if large -->
+        <div class="w-1/2">
+          <img src="img/khusus3.svg" alt="">
+        </div>
+        <!-- Start show in small -->
+        <div class="w-full flex justify-center flex-col items-center gap-5 lg:hidden">
+          <h3 class="text-xs text-center md:w-3/4 md:text-sm">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Aliquam, labore!</h3>
+          <div class="w-1/2 bg-purple-500 text-white rounded-2xl p-1 text-center lg:w-1/2 "><a href="">Get Started</a>
+          </div>
+        </div>
+        <!-- End show in small -->
+      </div>
+      <div class="hidden lg:flex lg:items-center lg:justify-center lg:text-3xl lg:text-blue-600 xl:text-4xl">Konsultasi
+        Dengan Ahli</div>
+      <!-- End Konten Khusus 3 -->
+    </div>
+  </div>
+  <!-- End Section 3 -->
+
+  <!-- Section 4 -->
+  <div class="min-h-screen py-16 px-10 bg-blue-100">
+    <h1 class="text-center text-blue-600 text-3xl font-bold mb-5 lg:text-5xl lg:mb-20">Artikel
+      Bermanfaat</h1>
+    <div class="grid grid-cols-1 gap-5 md:grid-cols-2 lg:gap-10 xl:grid-cols-4">
+      <div class="bg-slate-50 h-[24rem] rounded-xl flex flex-col overflow-hidden xl:h-[36rem]">
+        <div class="wrapper-img wrapper-img1 h-1/2 mb-5"></div>
+        <div class="px-5 flex flex-col justify-between lg:min-h-[40%]">
+          <h3 class="mb-3 lg:text-xl ">Bahaya Penyalahgunaan Narkoba</h3>
+          <p class="mb-5 text-xs font-light lg:text-sm">Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro
+            perspiciatis
+            sed sequi
+            voluptatibus, vel molestiae aliquid quae voluptates. Aliquid, quos dolorem. At et dolore distinctio!</p>
+          <div
+            class="p-1 border-2 border-blue-500 w-1/2 rounded-xl text-center self-end mb-5 hover:bg-blue-500 hover:text-white">
+            <a href="">Selengkapnya</a>
+          </div>
+        </div>
+      </div>
+      <div class="bg-slate-50 h-[24rem] rounded-xl flex flex-col overflow-hidden xl:h-[36rem]">
+        <div class="wrapper-img wrapper-img2 h-1/2 mb-5"></div>
+        <div class="px-5 flex flex-col justify-between lg:min-h-[40%]">
+          <h3 class="mb-3 lg:text-xl ">Bahaya Penyalahgunaan Narkoba</h3>
+          <p class="mb-5 text-xs font-light lg:text-sm">Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro
+            perspiciatis
+            sed sequi
+            voluptatibus, vel molestiae aliquid quae voluptates. Aliquid, quos dolorem. At et dolore distinctio!</p>
+          <div
+            class="p-1 border-2 border-blue-500 w-1/2 rounded-xl text-center self-end mb-5 hover:bg-blue-500 hover:text-white">
+            <a href="">Selengkapnya</a>
+          </div>
+        </div>
+      </div>
+      <div class="bg-slate-50 h-[24rem] rounded-xl flex flex-col overflow-hidden xl:h-[36rem]">
+        <div class="wrapper-img wrapper-img3 h-1/2 mb-5"></div>
+        <div class="px-5 flex flex-col justify-between lg:min-h-[40%]">
+          <h3 class="mb-3 lg:text-xl ">Bahaya Penyalahgunaan Narkoba</h3>
+          <p class="mb-5 text-xs font-light lg:text-sm">Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro
+            perspiciatis
+            sed sequi
+            voluptatibus, vel molestiae aliquid quae voluptates. Aliquid, quos dolorem. At et dolore distinctio!</p>
+          <div
+            class="p-1 border-2 border-blue-500 w-1/2 rounded-xl text-center self-end mb-5 hover:bg-blue-500 hover:text-white">
+            <a href="">Selengkapnya</a>
+          </div>
+        </div>
+      </div>
+      <div class="bg-slate-50 h-[24rem] rounded-xl flex flex-col overflow-hidden xl:h-[36rem]">
+        <div class="wrapper-img wrapper-img4 h-1/2 mb-5"></div>
+        <div class="px-5 flex flex-col justify-between lg:min-h-[40%]">
+          <h3 class="mb-3 lg:text-xl ">Bahaya Penyalahgunaan Narkoba</h3>
+          <p class="mb-5 text-xs font-light lg:text-sm">Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro
+            perspiciatis
+            sed sequi
+            voluptatibus, vel molestiae aliquid quae voluptates. Aliquid, quos dolorem. At et dolore distinctio!</p>
+          <div
+            class="p-1 border-2 border-blue-500 w-1/2 rounded-xl text-center self-end mb-5 hover:bg-blue-500 hover:text-white">
+            <a href="">Selengkapnya</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="w-full flex justify-center mt-10">
+      <div
+        class="border-2 border-blue-500 p-1 bg-slate-50 rounded-xl text-center w-1/2 hover:bg-blue-500 hover:text-white md:w-1/4">
+        <a href="">Lihat
+          Semua</a>
+      </div>
+    </div>
+  </div>
+  <!-- End Section 4 -->
+
+  <!-- FOoter -->
+  <div class="bg-blue-500 grid grid-cols-5 p-5 text-white gap-10">
+    <div class="flex justify-center">
+      <div class="w-3/4 flex flex-col justify-center items-center text-center gap-2">
+        <img src="./img/brand.png" alt="" class="w-1/4">
+        <h5 class="text-lg">Drugzoid HQ</h5>
+        <p class="text-xs">Citra Gading F9/11, Cipocok Jaya, Serang, Banten, 42121</p>
+      </div>
+    </div>
+    <div class="flex justify-center">
+      <div class="w-3/4">
+        <h5 class="mb-2">Layanan Utama</h5>
+        <a href="" class="font-light text-xs block hover:text-black">Forum Diskusi</a>
+        <a href="" class="font-light text-xs block hover:text-black">Pengelola Aktivitas</a>
+        <a href="" class="font-light text-xs block hover:text-black">Toko Kesehatan</a>
+        <a href="" class="font-light text-xs block hover:text-black">Sarana Edukasi</a>
+      </div>
+    </div>
+    <div class="flex justify-center">
+      <div class="w-3/4">
+        <h5 class="mb-2">Layanan Khusus</h5>
+        <a href="" class="font-light text-xs block hover:text-black">Bantuan Rehabilitasi</a>
+        <a href="" class="font-light text-xs block hover:text-black">Pengembangan Minat & Bakat</a>
+        <a href="" class="font-light text-xs block hover:text-black">Konsultasi Dengan Ahli</a>
+      </div>
+    </div>
+    <div class="flex justify-center">
+      <div class="w-3/4">
+        <h5 class="mb-2">Bantuan & Panduan</h5>
+        <a href="" class="font-light text-xs block hover:text-black">Company Credentials</a>
+        <a href="" class="font-light text-xs block hover:text-black">Layanan Pengaduan</a>
+        <a href="" class="font-light text-xs block hover:text-black">Syarat & Ketentuan</a>
+        <a href="" class="font-light text-xs block hover:text-black">Kebijakan Privasi</a>
+        <a href="" class="font-light text-xs block hover:text-black">Tentang Kami</a>
+        <a href="" class="font-light text-xs block hover:text-black">Bantuan</a>
+        <a href="" class="font-light text-xs block hover:text-black">Karir</a>
+      </div>
+    </div>
+    <div class="flex justify-center">
+      <div class="w-3/4">
+        <h5 class="mb-2">Hubungi Kami</h5>
+        <a href="" class="font-light text-xs block hover:text-black"><i
+            class="fa-brands fa-whatsapp mr-2"></i>081390343422</a>
+        <a href="" class="font-light text-xs block hover:text-black"><i
+            class="fa-regular fa-envelope mr-2"></i>info@drugzoid.com</a>
+        <a href="" class="font-light text-xs block hover:text-black"><i
+            class="fa-sharp fa-solid fa-phone mr-2"></i>021420008000</a>
+      </div>
+    </div>
+  </div>
+  <!-- End Footer -->
+</body>
+
+</html>
