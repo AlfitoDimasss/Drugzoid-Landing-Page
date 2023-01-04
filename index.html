@@ -5,89 +5,62 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="./img/brand.png">
+  <link rel="stylesheet" href="style.css">
   <script src="https://cdn.tailwindcss.com"></script>
   <script src="https://kit.fontawesome.com/c34ef532b6.js" crossorigin="anonymous"></script>
-  <title>Landing Page</title>
-  <style>
-    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap');
-
-    * {
-      font-family: 'Poppins', sans-serif;
-    }
-
-    @media screen and (min-width: 0px) {
-      .section-1 {
-        background-image: url(img/2.png);
-        background-repeat: no-repeat;
-        background-size: cover;
-      }
-    }
-
-    /* @media screen and (min-width: 640px) {
-      .section-1 {
-        background-image: url(img/2.png);
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: 0px -115px;
-      }
-    } */
-
-    @media screen and (min-width: 768px) {
-      .section-1 {
-        background-image: url(img/2.png);
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: 0px -90px;
-      }
-    }
-
-    @media screen and (min-width: 1024px) {
-      .section-1 {
-        background-image: url(img/2.png);
-        background-repeat: no-repeat;
-        background-size: cover;
-      }
-    }
-
-    .wrapper-img {
-      background-repeat: no-repeat;
-      background-size: cover;
-    }
-
-    .wrapper-img1 {
-      background-image: url(./img/card1.svg);
-    }
-
-    .wrapper-img2 {
-      background-image: url(./img/card2.svg);
-    }
-
-    .wrapper-img3 {
-      background-image: url(./img/card3.svg);
-    }
-
-    .wrapper-img4 {
-      background-image: url(./img/card4.svg);
-    }
-  </style>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+  <title>Drugzoid | Home</title>
 </head>
 
 <body>
   <!-- Navbar -->
-  <!-- <nav class="flex justify-between p-5">
-    <ul>
-      <li>Brand</li>
-    </ul>
-    <ul class="flex flex-row gap-5">
-      <li>Home</li>
-      <li>About</li>
-      <li>Features</li>
-    </ul>
-  </nav> -->
+
+  <nav class="bg-blue-500 px-2 py-2.5 sm:px-4">
+    <div class="container flex flex-wrap items-center justify-between mx-auto">
+      <a href="#" class="flex items-center">
+        <img src="./img/brand.png" class="h-6 mr-3 sm:h-9" alt="Flowbite Logo" />
+        <img src="./img/logo-desc.png" class="h-6 mr-3 sm:h-9" alt="Flowbite Logo" />
+      </a>
+      <button data-collapse-toggle="navbar-default" type="button"
+        class="inline-flex items-center p-2 ml-3 text-sm text-white rounded-lg lg:hidden hover:bg-gray-100 hover:text-blue-500 focus:outline-none"
+        id="btn">
+        <svg class="w-6 h-6" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20"
+          xmlns="http://www.w3.org/2000/svg">
+          <path fill-rule="evenodd"
+            d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
+            clip-rule="evenodd"></path>
+        </svg>
+      </button>
+      <div class="hidden w-full lg:block lg:w-auto" id="navbar-menu">
+        <ul class="flex flex-col p-4 mt-4 text-white lg:flex-row lg:space-x-8 lg:mt-0 lg:text-base lg:font-medium">
+          <li>
+            <a href="#home" class="block py-2 pl-3 pr-4 text-blue-900 border-b-2 border-white lg:p-0 lg:border-0"
+              onclick="clickedMenu(this)">Home</a>
+          </li>
+          <li>
+            <a href="#layanan"
+              class="block py-2 pl-3 pr-4 text-white hover:text-blue-900 border-b-2 border-white lg:p-0 lg:border-0"
+              onclick="clickedMenu(this)">Layanan</a>
+          </li>
+          <li>
+            <a href="#artikel"
+              class="block py-2 pl-3 pr-4 text-white hover:text-blue-900 border-b-2 border-white lg:p-0 lg:border-0"
+              onclick="clickedMenu(this)">Artikel</a>
+          </li>
+          <li>
+            <a href="#footer" class="block py-2 pl-3 pr-4 text-white hover:text-blue-900 lg:p-0"
+              onclick="clickedMenu(this)">Kontak</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
   <!-- End Navbar -->
 
   <!-- Section 1 -->
-  <div class="section-1 h-screen flex flex-col align-center justify-between">
+  <div class="section-1 h-screen flex flex-col align-center justify-between" id="home">
     <div class="h-3/4 flex justify-center items-center flex-col text-center px-10 gap-10 lg:w-1/2">
       <h1 class="text-5xl text-[#12ADC1] font-bold md:text-6xl xl:text-7xl">DRUGZOID</h1>
       <h3 class="text-3xl text-[#0295A9] -mt-7 md:text-4xl xl:text-5xl">YOUR HEALTH PARTNER</h3>
@@ -107,7 +80,7 @@
   <!-- End Section 1 -->
 
   <!-- Section 2 -->
-  <div class="section-2 min-h-screen align-center justify-between bg-blue-100 px-10 py-5 lg:py-16">
+  <div class="section-2 min-h-screen align-center justify-between bg-blue-100 px-10 py-5 lg:py-16" id="layanan">
     <h1 class="text-center text-blue-600 font-bold text-3xl mb-5 md:text-4xl lg:text-5xl lg:mb-20">Layanan Utama</h1>
     <div class="grid grid-cols-1 gap-10 md:grid-cols-2 lg:grid-cols-4">
       <div
@@ -120,19 +93,19 @@
         class="flex flex-col justify-between text-center bg-white rounded-3xl drop-shadow-2xl p-2 cursor-pointer hover:bg-gray-100 lg:h-72 xl:h-[36rem]">
         <img src="img/umum2.svg" alt="" class="h-3/4">
         <h3 class="h-1/4 text-xl text-blue-600 mt-2 xl:text-3xl">
-          Forum Diskusi</h3>
+          Pengelolaan Aktivitas</h3>
       </div>
       <div
         class="flex flex-col justify-between text-center bg-white rounded-3xl drop-shadow-2xl p-2 cursor-pointer hover:bg-gray-100 lg:h-72 xl:h-[36rem]">
         <img src="img/umum3.svg" alt="" class="h-3/4">
         <h3 class="h-1/4 text-xl text-blue-600 mt-2 xl:text-3xl">
-          Forum Diskusi</h3>
+          Apotek</h3>
       </div>
       <div
         class="flex flex-col justify-between text-center bg-white rounded-3xl drop-shadow-2xl p-2 cursor-pointer hover:bg-gray-100 lg:h-72 xl:h-[36rem]">
         <img src="img/umum1.svg" alt="" class="h-3/4">
         <h3 class="h-1/4 text-xl text-blue-600 mt-2 xl:text-3xl">
-          Forum Diskusi</h3>
+          Sarana Edukasi</h3>
       </div>
     </div>
   </div>
@@ -234,7 +207,7 @@
   <!-- End Section 3 -->
 
   <!-- Section 4 -->
-  <div class="min-h-screen py-16 px-10 bg-blue-100">
+  <div class="min-h-screen py-16 px-10 bg-blue-100" id="artikel">
     <h1 class="text-center text-blue-600 text-3xl font-bold mb-5 lg:text-5xl lg:mb-20">Artikel
       Bermanfaat</h1>
     <div class="grid grid-cols-1 gap-5 md:grid-cols-2 lg:gap-10 xl:grid-cols-4">
@@ -306,7 +279,7 @@
   <!-- End Section 4 -->
 
   <!-- FOoter -->
-  <div class="bg-blue-500 grid grid-cols-5 p-5 text-white gap-10">
+  <div class="bg-blue-500 grid grid-cols-5 p-5 text-white gap-10" id="footer">
     <div class="flex justify-center">
       <div class="w-3/4 flex flex-col justify-center items-center text-center gap-2">
         <img src="./img/brand.png" alt="" class="w-1/4">
@@ -356,6 +329,7 @@
     </div>
   </div>
   <!-- End Footer -->
+  <script src="./script.js"></script>
 </body>
 
 </html>
